@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paanee Company – Bottled Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#cfe3f6"/><stop offset=".5" stop-color="#9cc4ea"/><stop offset="1" stop-color="#7fb0e0"/></linearGradient>
+    <symbol id="jug" viewBox="0 0 120 200">
+      <rect x="40" y="2" width="40" height="14" rx="3" fill="#5b9bd5"/>
+      <path d="M44 16h32v18c0 6 30 14 30 40v100c0 14-8 22-22 22H36c-14 0-22-8-22-22V74c0-26 30-34 30-40z" fill="url(#gl)" stroke="#7aa9d6" stroke-width="2"/>
+      <path d="M20 90h80M20 110h80M20 130h80M20 150h80" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+      <rect x="86" y="70" width="18" height="50" rx="6" fill="#fff" fill-opacity=".55"/>
+    </symbol>
+    <symbol id="bottle" viewBox="0 0 60 160">
+      <rect x="22" y="2" width="16" height="12" rx="3" fill="#5b9bd5"/>
+      <path d="M24 14h12v14c0 8 14 14 14 30v86c0 8-5 14-14 14H24c-9 0-14-6-14-14V58c0-16 14-22 14-30z" fill="url(#gl)" stroke="#7aa9d6" stroke-width="2"/>
+      <path d="M12 80h36M12 100h36" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h3l2 11h10l2-8H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="9" cy="19" r="1.5" fill="currentColor"/><circle cx="17" cy="19" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 8h6M9 12h6M9 16h4" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 4h12l4 6-10 11L2 10z M2 10h20 M9 4l-2 6 5 11 5-11-2-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 12V3M12 12l7 5" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M4 18v-6c0-4 2-7 6-8l1 2c-2 1-3 3-3 5h3v7zm10 0v-6c0-4 2-7 6-8l1 2c-2 1-3 3-3 5h3v7z" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="page">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="topbar-wrap">
+    <div class="topbar">
+      <span><svg><use href="#i-pin"/></svg> 2072 Pinnickinick Street, WA 98370</span>
+      <span><svg><use href="#i-mail"/></svg> info@example.com</span>
+      <span class="social"><b>f</b><b>in</b><b>S</b><b>t</b></span>
+    </div>
+  </div>
+  <div class="container nav-row">
+    <a class="logo" href="#home">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-drop"/></svg></span>
+      <span><strong>Paanee</strong><small>Company</small></span>
+    </a>
+    <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><i></i><i></i><i></i></button>
+    <nav class="nav">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#news">News</a><a href="#pages">Pages</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="round" aria-label="Search"><svg><use href="#i-search"/></svg></button>
+      <button class="round" aria-label="Cart"><svg><use href="#i-cart"/></svg></button>
+      <a href="#contact" class="btn btn-primary">Get A Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Markets &amp; Resources</span>
+      <h1>Each Drop Will Make You Cool N Fresh!</h1>
+      <div class="btns">
+        <a href="#contact" class="btn btn-primary">Get A Quote</a>
+        <a href="#about" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="circle"></div>
+      <svg class="b b1" viewBox="0 0 60 160"><use href="#bottle"/></svg>
+      <svg class="b b2" viewBox="0 0 120 200"><use href="#jug"/></svg>
+      <svg class="b b3" viewBox="0 0 120 200"><use href="#jug"/></svg>
+    </div>
+  </div>
+  <svg class="blob" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 120c150-60 250 40 400-10s250-60 400 10 250 20 400-30v110H0z" fill="#e3effb"/></svg>
+</section>
+
+<!-- ============ COUNTERS ============ -->
+<section class="counters">
+  <div class="container counter-grid">
+    <div class="counter"><span class="ic"><svg><use href="#i-user"/></svg></span><div><b data-count="35000">0</b><small>Happy Customers</small></div></div>
+    <div class="counter"><span class="ic"><svg><use href="#i-doc"/></svg></span><div><b data-count="541">0</b><small>Projects Done</small></div></div>
+    <div class="counter"><span class="ic"><svg><use href="#i-gem"/></svg></span><div><b data-count="40">0</b><small>Awards Win</small></div></div>
+    <div class="counter"><span class="ic"><svg><use href="#i-chart"/></svg></span><div><b data-count="678">0</b><small>Client Works</small></div></div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section" id="services">
+  <div class="container center">
+    <span class="eyebrow">Why Choose Us</span>
+    <h2>A Trusted Name In Bottled Water Industry</h2>
+    <div class="why-grid">
+      <div class="why">
+        <span class="sq"><svg><use href="#i-drop"/></svg></span>
+        <h4>Cosmetic Dentistry</h4>
+        <p>Nulla a luctus nulla, eget lobortis sem. Suspendisse gravida, velit at mollis auctor.</p>
+      </div>
+      <div class="why-glass"><div class="glass"></div></div>
+      <div class="why">
+        <span class="sq"><svg><use href="#i-drop"/></svg></span>
+        <h4>Water Dispenser</h4>
+        <p>Aliquam dapibus ultricies tempor. Sed euismod sollicitudin molestie consectetur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section alt" id="products">
+  <div class="container center">
+    <span class="eyebrow">Our Products</span>
+    <h2>Bottles We Deliver</h2>
+    <div class="product-grid">
+      <article class="card"><div class="thumb"><svg viewBox="0 0 60 160"><use href="#bottle"/></svg></div><h5>Paanee Mineral Water 250 mL</h5><span class="tag">our products</span><p>Vivamus varius, tortor vel luctus ullamcorper, neque massa mattis erat.</p><div class="price"><del>$48.00</del> $45.00</div><button class="btn btn-primary sm">Add To Cart</button></article>
+      <article class="card"><div class="thumb"><svg viewBox="0 0 120 200"><use href="#jug"/></svg></div><h5>Premium Plan</h5><span class="tag">our products</span><p>Vestibulum tellus odio, cursus eget condimentum iaculis, imperdiet ut dolor.</p><div class="price"><del>$35.00</del> $30.00</div><button class="btn btn-primary sm">Add To Cart</button></article>
+      <article class="card"><div class="thumb"><svg viewBox="0 0 120 200"><use href="#jug"/></svg></div><h5>Basic Plan</h5><span class="tag">our products</span><p>Aenean dictum urna odio, nec porta tellus sollicitudin eu. Sed hendrerit urna.</p><div class="price"><del>$45.00</del> $40.00</div><button class="btn btn-primary sm">Add To Cart</button></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container center">
+    <span class="eyebrow">Who We Are</span>
+    <h2>A Trusted Name In Bottled Water Industry</h2>
+    <div class="video"><div class="people"></div><button class="play" aria-label="Play video"><svg><use href="#i-play"/></svg></button></div>
+    <div class="feat-grid">
+      <div class="feat"><span class="ic2"><svg><use href="#i-drop"/></svg></span><div><h6>Maximum Purity</h6><p>Nulla a luctus nulla, eget lobortis sem. Suspendisse gravida velit at mollis.</p></div></div>
+      <div class="feat"><span class="ic2"><svg><use href="#i-drop"/></svg></span><div><h6>5 Steps Filtration</h6><p>Aliquam dapibus ultricies tempor. Sed euismod sollicitudin molestie.</p></div></div>
+      <div class="feat"><span class="ic2"><svg><use href="#i-drop"/></svg></span><div><h6>Chlorine Free</h6><p>The quick, brown fox jumps over a lazy dog. Jackdaws love my big sphinx.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="achieve">
+  <div class="container center">
+    <h3>Our Achievements</h3>
+    <div class="ach-grid">
+      <div class="counter"><span class="ic"><svg><use href="#i-user"/></svg></span><div><b data-count="2181">0</b><small>Happy Customers</small></div></div>
+      <div class="counter"><span class="ic"><svg><use href="#i-doc"/></svg></span><div><b data-count="33">0</b><small>Projects Done</small></div></div>
+      <div class="counter"><span class="ic"><svg><use href="#i-gem"/></svg></span><div><b data-count="2">0</b><small>Awards Win</small></div></div>
+      <div class="counter"><span class="ic"><svg><use href="#i-chart"/></svg></span><div><b data-count="41">0</b><small>Client Works</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKERS ============ -->
+<section class="workers">
+  <div class="container worker-grid">
+    <div class="worker-img"><div class="man"></div><div class="clients"><b>5,000+</b><small>Satisfied Clients</small></div></div>
+    <div class="worker-text">
+      <h3>Experienced Workers</h3>
+      <p>Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est. Aliquam a bibendum mi, sed condimentum.</p>
+      <ul><li><svg><use href="#i-check"/></svg> Consectetur adipiscing elit</li><li><svg><use href="#i-check"/></svg> Eiusmod tempor incididunt</li><li><svg><use href="#i-check"/></svg> Exercitation ullamco laboris</li><li><svg><use href="#i-check"/></svg> Dolore magna aliqua</li></ul>
+      <a href="#about" class="btn btn-white sm">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testi" id="news">
+  <div class="container center">
+    <span class="eyebrow">Client Testimonials</span>
+    <h2>What our clients say</h2>
+    <div class="testi-grid">
+      <div class="tcard"><span class="av a1"></span><p>Aliquam erat volutpat. Proin pretium lobortis massa, eget luctus dui. Aliquam vel nisi at massa ultricies imperdiet.</p><b>Eugene Freeman</b><small>Therapist</small><span class="q"><svg><use href="#i-quote"/></svg></span></div>
+      <div class="tcard"><span class="av a2"></span><p>Donec vel arcu ac felis ultricies viverra non eget nulla. Proin sed viverra magna. Donec dictum orci.</p><b>Kelly Coleman</b><small>Nulla nec</small><span class="q"><svg><use href="#i-quote"/></svg></span></div>
+      <div class="tcard"><span class="av a3"></span><p>Vestibulum convallis dui a dui molestie sodales. Aliquam viverra nisl ligula, ac dictum erat tincidunt vel.</p><b>Philip Sanders</b><small>Consectetur</small><span class="q"><svg><use href="#i-quote"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="container foot-grid">
+    <div><a class="logo light" href="#home"><span class="logo-mark"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-drop"/></svg></span><span><strong>Paanee</strong><small>Company</small></span></a><p>Pure, fresh drinking water delivered straight to your door.</p></div>
+    <div><h6>Quick Links</h6><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#news">News</a></div>
+    <div><h6>Contact</h6><span>2072 Pinnickinick Street, WA 98370</span><span>info@example.com</span></div>
+  </div>
+  <div class="copy">© 2026 Paanee Company. All rights reserved.</div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
