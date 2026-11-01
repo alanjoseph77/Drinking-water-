@@ -11,7 +11,7 @@ svg{width:20px;height:20px;display:inline-block;vertical-align:middle}
 h1,h2,h3,h4,h5,h6{font-family:'Jost',sans-serif;color:var(--navy);line-height:1.2}
 h2{font-size:34px;font-weight:500;margin-bottom:40px}
 .eyebrow{display:block;font-family:'Jost';font-size:12px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
-.btn{display:inline-block;padding:11px 28px;border-radius:4px;font-family:'Jost';font-weight:600;font-size:14px;border:1px solid transparent;cursor:pointer;transition:.25s}
+.btn{display:inline-block;padding:11px 28px;border-radius:4px;font-family:'Jost';font-weight:600;font-size:14px;border:1px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s}
 .btn.sm{padding:5px 16px;font-size:12px}
 .btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-d)}
 .btn-outline{background:#fff;border-color:#d7e1ec;color:var(--navy)}.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
@@ -133,3 +133,8 @@ footer{background:var(--navy);color:#b9c4d2;padding-top:60px;font-size:13px}
  .testi-grid{gap:44px}
  h2{font-size:26px}
 }
+
+/* scroll / animation helpers */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .3s}
+.site-header.scrolled{box-shadow:0 6px 20px rgba(20,33,61,.08)}
+.b,.circle,.card,.tcard,.feat,.video,.worker-img{will-change:transform}
