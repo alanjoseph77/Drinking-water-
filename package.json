@@ -1,0 +1,30 @@
+{
+  "name": "aqua-mareeba",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Aqua Mareeba packaged drinking water by M/s. Rain Drops, Kolayad, Kannur, Kerala.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gsap/react": "2.1.2",
+    "gsap": "3.13.0",
+    "next": "15.5.27",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@types/three": "0.169.0",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
